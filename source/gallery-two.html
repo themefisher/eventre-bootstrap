@@ -1,0 +1,144 @@
+@@include('header.htm')
+
+@@include('blocks/navigation.htm')
+
+@@include('blocks/page-title.htm',{
+"title" : "Our Gallery",
+"page" : "Our Gallery"
+})
+
+
+<!--=============================
+=            Gallery            =
+==============================-->
+
+<section class="section gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="controls">
+					<div class="btn-group btn-group-toggle d-block" data-toggle="buttons">
+						<label class="btn active">
+							<input type="radio" name="gallery-filter" value="all" checked="checked" />All
+						</label>
+						<label class="btn">
+							<input type="radio" name="gallery-filter" value="conference" />Conference
+						</label>
+						<label class="btn">
+							<input type="radio" name="gallery-filter" value="meeting" />Meeting
+						</label>
+						<label class="btn">
+							<input type="radio" name="gallery-filter" value="events" />Events
+						</label>
+						<label class="btn">
+							<input type="radio" name="gallery-filter" value="party" />Party
+						</label>
+						<label class="btn">
+							<input type="radio" name="gallery-filter" value="concert" />Concert
+						</label>
+					</div>
+				</div>
+				<div class="gallery-wrapper row less-gutter">
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;meeting&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-one.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-one.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;party&quot;,&quot;events&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-two.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-two.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;meeting&quot;,&quot;party&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-three.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-three.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;conference&quot;,&quot;concert&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-four.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-four.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;concert&quot;,&quot;party&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-five.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-five.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;events&quot;,&quot;conference&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-six.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-six.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;meeting&quot;,&quot;events&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-seven.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-seven.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery-item col-lg-3 col-md-6" data-groups="[&quot;concert&quot;,&quot;conference&quot;]">
+						<div class="image-block">
+							<div class="image">
+								<img src="images/gallery/gallery-less-eight.jpg" alt="gallery-image" class="img-fluid">
+								<div class="primary-overlay">
+									<a class="image-popup" data-effect="mfp-with-zoom" href="images/gallery/gallery-popup-eight.jpg"><i
+											class="fa fa-picture-o"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Gallery  ====-->
+
+@@include('blocks/cta-subscribe.htm')
+
+@@include('blocks/google-map.htm')
+
+@@include('blocks/footer.htm')
+
+@@include('footer.htm')

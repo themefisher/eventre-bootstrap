@@ -1,0 +1,252 @@
+.main-nav {
+	background: $light;
+
+	@include tablet {
+		position: relative;
+	}
+
+	.navbar-brand {
+		padding: 35px 40px 35px 50px;
+		border-right: 1px solid $border-color;
+
+		@include large-desktop {
+			padding: 20px 30px;
+		}
+
+		@include tablet {
+			border-right: none;
+		}
+	}
+
+	.navbar-toggler {
+		font-size: 1.5rem;
+		margin-right: 15px;
+	}
+
+	.navbar-nav {
+		.nav-item {
+			position: relative;
+			font-family: $primary-font;
+
+			.nav-link {
+				position: relative;
+				text-align: center;
+				color: $black;
+				padding-left: 5px;
+				padding-right: 17px;
+				padding-top: 1.2rem;
+				padding-bottom: 1.2rem;
+				font-size: 1.06rem;
+				font-family: $secondary-font;
+
+				@include desktop-nav {
+					font-size: 0.86rem;
+					padding-right: 10px;
+				}
+
+				@include large-desktop {
+					padding-left: 4px;
+					padding-right: 10px;
+				}
+
+				@include desktop-sm {
+					padding-top: 0.5rem;
+					padding-bottom: 0.5rem;
+				}
+
+				span {
+					color: $black;
+					margin-left: 16px;
+
+					@include large-desktop {
+						margin-left: 14px;
+					}
+
+					@include desktop {
+						margin-left: 10px;
+					}
+					@include desktop-sm {
+						display: none;
+					}
+				}
+			}
+
+			&:hover,
+			&.active {
+				.nav-link {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	.dropdown {
+		position: relative;
+
+		.open>a,
+		.open>a:focus,
+		.open>a:hover {
+			background: transparent;
+		}
+
+		&.full-width {
+			.dropdown-menu {
+				left: 0 !important;
+				right: 0 !important;
+			}
+		}
+
+		.dropdown-menu {
+			min-width: 220px;
+			margin: 0;
+			padding: 0;
+			border-radius: 0;
+			border: 0;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+			li:not(:last-child) {
+				.dropdown-item {
+					border-bottom: 1px solid $border-color;
+
+					@include desktop-sm {
+						border: 0;
+					}
+				}
+			}
+
+			.dropdown-item {
+				font-size: 15px;
+				padding: 10px 16px;
+				transition: .3s ease;
+
+				&:hover {
+					background: $light;
+					color: $primary-color;
+				}
+			}
+
+			@include desktop-sm {
+				transform: none;
+				left: auto;
+				position: relative;
+				text-align: center;
+				opacity: 1;
+				visibility: visible;
+				background: rgb(243, 243, 243);
+			}
+		}
+
+		@media(min-width:992px) {
+			.dropdown-menu {
+				transition: .3s all;
+				position: absolute;
+				display: block;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(30px);
+			}
+
+			&:hover>.dropdown-menu {
+				border-top: 3px solid $primary-color;
+				opacity: 1;
+				display: block;
+				visibility: visible;
+				color: #777;
+				transform: translateY(0);
+			}
+
+			.dropleft .dropdown-menu {
+				right: 100%;
+			}
+		}
+	}
+
+	.dropleft .dropdown-menu,
+	.dropright .dropdown-menu {
+		margin: 0;
+	}
+
+	.dropleft .dropdown-menu {
+		right: 0;
+	}
+
+	.dropleft .dropdown-toggle::before,
+	.dropright .dropdown-toggle::after {
+		font-weight: bold;
+		font-family: 'FontAwesome';
+		border: 0;
+		font-size: 14px;
+		vertical-align: 1px;
+	}
+
+	.dropleft .dropdown-toggle::before {
+		content: "\f104";
+		margin-right: 7px;
+	}
+
+	.dropright .dropdown-toggle::after {
+		content: "\f105";
+		margin-left: 7px;
+	}
+
+	.dropdown-submenu:hover>.dropdown-toggle,
+	.dropdown-submenu.active>.dropdown-toggle {
+		color: $primary-color;
+	}
+
+	.ticket {
+		background: $primary-color;
+		display: block;
+		padding: 34px 32px;
+
+		@include desktop-nav {
+			padding: 34px 26px;
+		}
+
+		@include large-desktop {
+			padding: 23px 26px;
+		}
+
+		@include desktop-sm {
+			text-align: center;
+		}
+
+		img {
+			margin-right: 25px;
+
+			@include large-desktop {
+				display: none;
+			}
+		}
+
+		span {
+			color: $light;
+			font-size: 1.125rem;
+			text-transform: uppercase;
+			font-family: $secondary-font;
+			border-left: 1px solid #ffa366;
+			padding-left: 24px;
+
+			@include large-desktop {
+				padding-left: 0;
+				font-size: 1rem;
+				border-left: none;
+			}
+		}
+	}
+}
+
+// bootstrap override
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+	outline: none;
+}
+
+// Nav Scroll
+// .navbar-collapse{
+// 	&.show{
+// 		@include desktop{
+// 			overflow-y: scroll;
+// 		}
+// 	}
+// }
