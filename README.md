@@ -1,5 +1,5 @@
 # Eventre By Themefisher
-Whether you arrange a local or international business event or conference, it is an utmost must to have a dedicated website for it. Without having a website, in this day of technology, you are losing a ton of money on the table. With an attractive website template like Eventre, you can add a new dimension to your business.
+Eventre is a clean and powerful Bootstrap template dedicated to all kinds of Events, Conferences and Meetups. It offers many various possibilities which will help you easily create a beautiful, stunning and unique website.
 
 <!-- demo -->
 ## Example Site
@@ -45,7 +45,7 @@ Download this template from any following options:
 
 * Download from [Github](https://github.com/themefisher/Eventre-Event-Conference-Template/archive/master.zip)
 * Clone the repository: `git clone https://github.com/themefisher/Eventre-Event-Conference-Template.git`
-* Download from [Themefisher](https://themefisher.com/products/Eventre-Event-Conference-Template/)
+* Download from [Themefisher](https://themefisher.com/products/eventre-event-conference-website-template/)
 
 
 <!-- installation -->
