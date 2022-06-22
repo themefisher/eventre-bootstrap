@@ -5,19 +5,6 @@
  * GITHUB: https://github.com/themefisher/
  */
 
-/*
-THEME: Eventre - Event and Conference Template
-VERSION: 1.0.0
-AUTHOR: Themefisher
-
-HOMEPAGE: https://themefisher.com/products/eventre-event-conference-website-template/
-DEMO: https://demo.themefisher.com/eventre/
-GITHUB: https://github.com/themefisher/Eventre-Event-Conference-Template/
-
-WEBSITE: https://themefisher.com
-TWITTER: https://twitter.com/themefisher
-FACEBOOK: https://www.facebook.com/themefisher
-*/
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
@@ -173,7 +160,7 @@ ul.social-links li a i {
 
 .overlay-white:before {
   content: "";
-  background: linear-gradient(0deg, rgba(245, 245, 248, 0.8) 0%, #f7f7f7 100%);
+  background: linear-gradient(0deg, rgba(245, 245, 248, 0.8) 0%, rgb(247, 247, 247) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -185,7 +172,7 @@ ul.social-links li a i {
   content: "";
   width: 100%;
   margin-left: -45%;
-  background: white;
+  background: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   left: 0;
@@ -675,7 +662,7 @@ select.form-control:not([size]):not([multiple]) {
     text-align: center;
     opacity: 1;
     visibility: visible;
-    background: #f3f3f3;
+    background: rgb(243, 243, 243);
   }
 }
 @media (min-width: 992px) {
